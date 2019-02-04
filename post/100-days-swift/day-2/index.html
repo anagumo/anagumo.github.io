@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>100 Days of Swift: Day 2</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              <a class="nav-item nav-link" href="https://github.com/shhnagumo" target="_blank">GitHub</a>
+              
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">Ariana Nagumo</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/">I make apps</a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>100 Days of Swift: Day 2</h1>
+  <div class="blog-post-subheader">
+    <time>02 Feb 2019</time>
+  </div>
+  <div class="blog-post-content">
+    
+
+<ul>
+<li>Scope: Arrays, dictionaries, sets and enums.</li>
+</ul>
+
+<p>El día dos de este maratón inicia con una frase mágica a la que Paul hizo alusión: Cuando las cosas se ponen difíciles, todos se van, ¡bom!</p>
+
+<h3 id="arrays">Arrays</h3>
+
+<p>Swift provee tres tipos de colecciones primarias para guardar colecciones de valores, una de ellas son los arreglos.
+Un arreglo guarda una colección de valores del mismo tipo en una lista ordenada. Hasta entonces hemos creado variables y constantes
+independientes que no sólo podemos utilizar en un nuevo <code>String</code> sino también agruparlas en un sólo tipo:</p>
+
+<pre><code>let song1 = &quot;Nobody Else Will Be There&quot;
+let song2 = &quot;Day I Die&quot;
+let song3 = &quot;Walk It Black&quot;
+
+let album = [song1, song2, song3]
+</code></pre>
+
+<p>Si usamos Type Annotations creamos nuestro arreglo de la siguiente manera:</p>
+
+<pre><code>let scores: [Int] = [10, 25, 99]
+</code></pre>
+
+<p>Podemos acceder a un valor de un arreglo usando Subscript Syntax, es decir, pasando el <code>index</code> del valor que quieres obtener dentro de corchetes:</p>
+
+<pre><code>album[2] // Imprime Walk It Black, ya que toda lista comienza en la posición 0
+</code></pre>
+
+<h3 id="sets">Sets</h3>
+
+<p>Al igual que los <code>Arrays</code>, los <code>Sets</code> son colecciones de valores, excepto porque son listas donde el orden de los elementos no importa
+pero sus valores tienen que ser únicos:</p>
+
+<pre><code>let primeNumbers = Set([2, 3, 5, 7])
+let colors: Set&lt;String&gt; = [&quot;Purple&quot;, &quot;Red&quot;, &quot;Purpule&quot;] // Esto sólo creará un Set con dos elementos
+</code></pre>
+
+<h3 id="dictionaries">Dictionaries</h3>
+
+<p>Finalmente tenemos a los diccionarios que guardan asociaciones entre llaves y valores en una colección donde tampoco importa tanto el orden:</p>
+
+<pre><code>var credits: [String: String] = [&quot;Main Actor&quot;: &quot;Yalitza Aparicio&quot;, &quot;Director&quot;: &quot;Alfonso Cuarón&quot;, &quot;Soundtrack&quot;: &quot;Leo Dan&quot;]
+</code></pre>
+
+<p>La forma de acceder a los valores de un diccionario es mediante las llaves que los identifican, si ésta no existe podemos asignar una por default:</p>
+
+<pre><code>credits[&quot;Main Actor&quot;, default: &quot;Unknown&quot;] // =&gt; Yalitza Aparicio
+</code></pre>
+
+<h3 id="tuples">Tuples</h3>
+
+<p>Existe otro tipo de colección en el mundo de Swift llamada Tupla, éstas agrupan multiples valores que pueden ser de cualquier tipo y
+no tienen que ser del mismo tipo entre ellas \o/</p>
+
+<pre><code>let date = (year: 1990, month: 10, day: 13)
+let person = (name: &quot;Mateo&quot;, age: 3)
+</code></pre>
+
+<p>Para acceder al valor de una tupla podemos hacerlo mediante su posición o por el nombre que le hemos dado a su valor:</p>
+
+<pre><code>person.1 // =&gt; 3
+person.name // =&gt; Mateo
+</code></pre>
+
+<h3 id="enumerations">Enumerations</h3>
+
+<p>Qué pasa cuando lo único que queremos es tener un lista de valores que se relacionan entre sí, usamos Enums:</p>
+
+<pre><code>enum Weekend {
+    case saturday
+    case sunday
+}
+
+let day = Weekend.sunday // =&gt; sunday
+</code></pre>
+
+<p>Si queremos proveer información adicional a un <code>enum</code> usamos valores asociados:</p>
+
+<pre><code>enum Weekdays {
+    case monday(activity: String)
+    case friday(activity: String)
+}
+
+let monday = Weekdays.monday(activity: &quot;Work starts&quot;)
+let friday = Weekdays.friday(activity: &quot;Work ends&quot;)
+</code></pre>
+
+<p>Finalmente, podemos asignar valores a los <code>enums</code>, dado que todo elemento de una lista comienza en la posición 0, un ejemplo muy práctico
+para que los casos de un enum coincidan con una serie númerica que comienza en 1, sería el siguiente:</p>
+
+<pre><code>enum Numbers: Int {
+    case one = 1
+    case two
+    case three
+    case four
+}
+
+let first = Numbers(rawValue: 4) // =&gt; four
+</code></pre>
+
+<p>Sólo hace falta asignar el primer valor y Swift hará el resto.</p>
+
+<h4 id="resources">Resources</h4>
+
+<ul>
+<li><a href="https://github.com/shhnagumo/swift-playground/blob/master/0-100-days-of-swift/2-day.swift">Playground for Xcode: Day 2</a></li>
+<li><a href="https://www.hackingwithswift.com/100/2">Hacking With Swift, Day 2: Arrays, Dictionaries, Sets and Enums</a></li>
+<li><a href="https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html">Collection Types</a></li>
+<li><a href="https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html">Enumerations</a></li>
+</ul>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2019 I make apps.
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+
