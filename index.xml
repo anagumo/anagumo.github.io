@@ -6,10 +6,20 @@
     <description>Recent content on Ariana Nagumo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2019 10:40:40 -0600</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2019 12:36:25 -0600</lastBuildDate>
     
 	<atom:link href="http://shhnagumo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>100 Days of Swift: Day 2</title>
+      <link>http://shhnagumo.github.io/post/100-days-swift/day-2/</link>
+      <pubDate>Sat, 09 Mar 2019 12:36:25 -0600</pubDate>
+      
+      <guid>http://shhnagumo.github.io/post/100-days-swift/day-2/</guid>
+      <description>Scope: Arrays, dictionaries, sets and enums.  El día dos de este maratón inicia con una frase mágica a la que Paul hizo alusión: Cuando las cosas se ponen difíciles, todos se van, ¡bom!
+Arrays Swift provee tres tipos de colecciones primarias para guardar colecciones de valores, una de ellas son los arreglos. Un arreglo guarda una colección de valores del mismo tipo en una lista ordenada. Hasta entonces hemos creado variables y constantes independientes que no sólo podemos utilizar en un nuevo String sino también agruparlas en un sólo tipo:</description>
+    </item>
     
     <item>
       <title>100 Days of Swift: Day 1</title>
