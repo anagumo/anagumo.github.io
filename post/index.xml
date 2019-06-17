@@ -6,28 +6,19 @@
     <description>Recent content in Posts on Ariana Nagumo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Mar 2019 12:36:25 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 17 Jun 2019 08:03:47 -0500</lastBuildDate>
     
 	<atom:link href="http://shhnagumo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>100 Days of Swift: Day 2</title>
-      <link>http://shhnagumo.github.io/post/100-days-swift/day-2/</link>
-      <pubDate>Sat, 09 Mar 2019 12:36:25 -0600</pubDate>
+      <title>Self-Discipline Manifesto</title>
+      <link>http://shhnagumo.github.io/post/discipline/self/</link>
+      <pubDate>Mon, 17 Jun 2019 08:03:47 -0500</pubDate>
       
-      <guid>http://shhnagumo.github.io/post/100-days-swift/day-2/</guid>
-      <description>Scope: Arrays, dictionaries, sets and enums.  El día dos de este maratón inicia con una frase mágica a la que Paul hizo alusión: Cuando las cosas se ponen difíciles, todos se van, ¡bom!
-Arrays Swift provee tres tipos de colecciones primarias para guardar colecciones de valores, una de ellas son los arreglos. Un arreglo guarda una colección de valores del mismo tipo en una lista ordenada. Hasta entonces hemos creado variables y constantes independientes que no sólo podemos utilizar en un nuevo String sino también agruparlas en un sólo tipo:</description>
-    </item>
-    
-    <item>
-      <title>100 Days of Swift: Day 1</title>
-      <link>http://shhnagumo.github.io/post/100-days-swift/day-1/</link>
-      <pubDate>Fri, 08 Mar 2019 10:40:40 -0600</pubDate>
-      
-      <guid>http://shhnagumo.github.io/post/100-days-swift/day-1/</guid>
-      <description>Scope: Variables, Simple Data Types &amp;amp; String Interpolation  Este es el gran inicio del maratón 100 Days of Swift, nunca antes intenté hacer un reto similar pero la idea de Paul Hudson es simplemente maravillosa, usualmente uno ve a personas haciendo 100 días de algo pero no a nivel de comunidad, así que mi compromiso social incluye un post diario en este blog y una breve cápsula semanal en Youtube; si te has involucrado y quieres compartir tu experiencia escríbeme un tweet.</description>
+      <guid>http://shhnagumo.github.io/post/discipline/self/</guid>
+      <description>Ni el talento ni el CI son suficientes para tener éxito en la vida, sólo la fuerza de voluntad puede arrojar resultados fantásticos a largo plazo. – Steve Pavlina.
+ Mi primer contacto con la auto disciplina fue Steve Pavlina, un hombre que solía tener amor por lo ajeno hasta que llegó a prisión y decidió que era un buen momento para hacer las cosas diferentes. Él y sus cinco pilares de la disciplina fueron mi punto de partida, y el puente a muchos otros recursos de los que me hice para mejorar en ese aspecto.</description>
     </item>
     
   </channel>
